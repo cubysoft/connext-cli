@@ -1,0 +1,45 @@
+{
+  "name": "connext-cli",
+  "version": "1.0.3",
+  "description": "A CLI tool for initializing web development projects with templates for HTML, JS, and TS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "bin": {
+    "connext": "./bin/index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cubysoft/connext-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "project scaffolding",
+    "html",
+    "javascript",
+    "typescript",
+    "templates",
+    "web development"
+  ],
+  "author": "cubysoft",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^6.0.1",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "ethers": "^6.13.2",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^11.0.2",
+    "ora": "^8.1.0"
+  },
+  "homepage": "https://github.com/cubysoft/connext-cli#readme",
+  "bugs": {
+    "url": "https://github.com/cubysoft/connext-cli/issues"
+  }
+}

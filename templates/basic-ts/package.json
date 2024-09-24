@@ -1,0 +1,11 @@
+{
+    "name": "basic-ts-project",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "tsc && node index.js"
+    },
+    "devDependencies": {
+      "typescript": "^4.8.4"
+    }
+  }
+  
