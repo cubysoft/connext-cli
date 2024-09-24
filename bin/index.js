@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-//bin/index.js
-import { select } from '@inquirer/prompts';
+// bin/index.js
+import { select, input } from '@inquirer/prompts';
 import { displayHelp } from '../components/help.js';
 import { updateDependencies } from '../components/update.js';
 import { displayVersion } from '../components/version.js';
@@ -28,19 +28,16 @@ process.on('SIGTERM', async () => {
 async function main() {
   console.clear();
 
-  // Si el usuario ingresa el comando --help o -h, mostrar la ayuda
   if (process.argv.includes('--help') || process.argv.includes('-h')) {
     displayHelp();
     return;
   }
 
-  // Manejar el comando de versión
   if (process.argv.includes('--version') || process.argv.includes('-v')) {
     displayVersion();
     return;
   }
 
-  // Manejar el comando de actualización
   if (process.argv.includes('update')) {
     try {
       await updateDependencies();
@@ -51,12 +48,10 @@ async function main() {
     }
   }
 
-  // Manejar el comando 'create'
   if (process.argv.includes('create')) {
     try {
-      // Mostrar logo con gradiente antes de iniciar el proceso de creación
       displayAsciiLogo();
-      const gradientText = gradient(['#00aaff', '#aa00ff'])('version 1.0.3');
+      const gradientText = gradient(['#00aaff', '#aa00ff'])('version 1.0.4');
       console.log(gradientText);
 
       let provider;
@@ -86,7 +81,6 @@ async function main() {
     }
   }
 
-  // Si no se reconoce el comando, mostrar un mensaje de ayuda
   console.log('⚠️ Comando no reconocido. Usa --help para ver las opciones disponibles.');
   process.exit(1);
 }

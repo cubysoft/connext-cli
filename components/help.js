@@ -33,7 +33,7 @@ export function displayHelp() {
       connext --help     Muestra este mensaje de ayuda.
       connext --version  Muestra la versión del CLI.
 
-    Versión: v1.0.3
+    Versión: v1.0.4
 
     Soporte:
       Para reportar problemas, visita nuestro repositorio en GitHub: https://github.com/tuusuario/connext-cli

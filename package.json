@@ -1,6 +1,6 @@
 {
   "name": "connext-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A CLI tool for initializing web development projects with templates for HTML, JS, and TS",
   "main": "index.js",
   "scripts": {
